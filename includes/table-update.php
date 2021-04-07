@@ -1,0 +1,1 @@
+<p class="col s12 m6 l4 card-panel yellow darken-1 collection-item black-text z-depth-0" ><i class="fas fa-info-circle"></i> <b>Last updated on:</b> <span>06&sol;04&sol;2021</span> <span>06:16 pm</span></p>

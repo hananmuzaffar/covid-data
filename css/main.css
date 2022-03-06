@@ -1,0 +1,8 @@
+table, td, th {
+  border: 10px solid;
+}
+
+.jk-heading {
+  padding: 10px 0 10px 10px;
+  border-radius: 3px;
+}

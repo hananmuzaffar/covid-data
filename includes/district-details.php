@@ -1,0 +1,25 @@
+	<thead>
+        <tr>
+            <th data-field="district">District</th>
+            <th class="red-text" data-field="positive">Postive Cases</th>
+            <th class="blue-text" data-field="active">Active Cases</th>
+            <th class="green-text" data-field="recovered">Recovered</th>
+            <th class="grey-text" data-field="deaths">Deaths</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php
+               $query = mysqli_query($dbconnect, "SELECT * FROM cases LIMIT 20")
+               or die (mysqli_error($dbconnect));
+               while ($row = mysqli_fetch_array($query)) {
+               echo
+        "<tr id='" . $row['district_name'] . "'>
+            <td class='green white-text' style='font-weight:bold'>" . $row['district_name'] . "</td>
+            <td class='black-text text-darken-3'>" . $row['total_positive_cases'] . " <span class='red-text'>&#8593;" . $row['new_positive_cases'] . "</span></td>
+            <td class='black-text text-darken-3'>" . $row['total_active_cases'] . "</td>
+            <td class='black-text text-darken-3'>" . $row['total_recovered'] . " <span class='green-text'>&#8593;" . $row['new_recovered'] . "</span></td>
+            <td class='black-text text-darken-3'>" . $row['total_deaths'] . " <span class='grey-text'>&#8593;" . $row['new_deaths'] . "</span></td>
+        </tr>
+        "; }
+        ?>
+    </tbody>

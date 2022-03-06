@@ -1,18 +1,24 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
-<head>
-<title>J&amp;K COVID-19 DATA BANK</title>
-<?php include 'includes/header.php' ?>
-
-<div class="container" id="#home">
-<div class="row" id="districts">
-<h5 class="center red-text lighten-3">J&amp;K district wise list</h5>
-<div class="row">
-<?php include 'includes/table-update.php' ?>
-</div>
-<table class="centered highlight">
-<?php include 'includes/district-table.php' ?>
-</table>
-</div>
-</div>
-<?php include 'includes/footer.php' ?>
+    <head>
+      <title>Tabular Data | J&amp;K COVID-19 DATA BANK</title>
+      <?php include './includes/meta-tags.php'; ?>
+    </head>
+    <body>
+        <?php include './includes/header.php';
+                require './config/db.php' ?>
+        <!-- container start -->
+        <div class="container">
+            <?php include './includes/headline.php'; ?>
+            <div class="row" id="districts">
+                <h5 class="center red-text lighten-3">J&amp;K district wise list</h5>
+                <?php include './includes/updation.php' ?>
+              	<table class="centered highlight">
+                  <?php include './includes/district-details.php' ?>
+              	</table>
+            </div>
+        </div>
+        <!-- container end -->
+        <?php include './includes/footer.php' ?>
+    </body>
+</html>

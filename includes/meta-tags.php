@@ -1,5 +1,5 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-<link type="text/css" rel="stylesheet" href="../materialize/css/materialize.min.css" media="screen,projection" />
+<link type="text/css" rel="stylesheet" href="../assets/materialize/css/materialize.min.css" media="screen,projection" />
 <link href="../assets/fontawesome/css/all.css" rel="stylesheet">
 <link rel="icon" href="../assets/images/favicon.ico" sizes="32x32" />
 <link rel="icon" href="../assets/images/favicon.ico" sizes="192x192" />

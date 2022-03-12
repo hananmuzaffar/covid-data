@@ -6,7 +6,7 @@
     </head>
     <body>
         <?php include './includes/header.php';
-        require './config/db.php'?>
+        require './config/connection.php'?>
         <!-- container start -->
         <div class="container" id="#home">
             <?php include './includes/headline.php' ?>

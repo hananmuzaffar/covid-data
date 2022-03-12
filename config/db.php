@@ -1,8 +1,8 @@
 <?php
-$hostname = "localhost";
-$username = "biblicho_hanan";
-$password = "hanan786@#$";
-$db = "biblicho_covid";
+$hostname = /* "hostname" */;
+$username = /* "username" */;
+$password = /* "password" */;
+$db = /* "db_name" */;
 $dbconnect=mysqli_connect($hostname,$username,$password,$db);
 if ($dbconnect->connect_error) {
   die("Database connection failed: " . $dbconnect->connect_error);

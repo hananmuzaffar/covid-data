@@ -6,7 +6,7 @@
     </head>
     <body>
         <?php include './includes/header.php';
-                require './config/db.php' ?>
+                require './config/connection.php' ?>
         <div class="container">
             <?php include './includes/headline.php' ?> 
             <div class="row">

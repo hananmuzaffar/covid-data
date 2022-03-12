@@ -1,7 +1,7 @@
 <?php
-$hostname = /*"hostname"*/;
-$username = /*"username"*/;
-$password = /*"password"*/;
+$hostname = /* "hostname" */;
+$username = /* "username" */;
+$password = /* "password" */;
 
 $dbconnect = mysqli_connect($hostnamename, $username, $password);
 if (!$dbconnect) {

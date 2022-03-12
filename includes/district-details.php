@@ -21,8 +21,7 @@ else {echo "";} echo "</span></td>
 else {echo "";} echo "</span></td>
             <td class='black-text text-darken-3'>" . $row['total_recovered'] . " <span class='green-text'>"; if ($row['new_recovered'] > "0"){echo "&#8593; " . $row['new_recovered'] . "";} elseif ($row['new_recovered'] < "0"){echo "&#8595;" . $row['new_recovered'] . "";}
 else {echo "";} echo "</span></td>
-            <td class='black-text text-darken-3'>" . $row['total_deaths'] . " <span class='grey-text'>"; if ($row['new_deaths'] > "0"){echo "&#8593; " . $row['new_deaths'] . "";} elseif ($row['new_deaths'] < "0"){echo "&#8595;" . $row['new_deaths'] . "";}
-else {echo "";} echo "</span></td>
+            <td class='black-text text-darken-3'>" . $row['total_deaths'] . " <span class='grey-text'>"; if ($row['new_deaths'] > "0"){echo "&#8593; " . $row['new_deaths'] . "";} else {echo "";} echo "</span></td>
         </tr>
         "; }
         ?>

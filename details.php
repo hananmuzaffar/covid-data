@@ -3,7 +3,7 @@
    <head>
       <title>Patient Details | J&amp;K COCID-19 DATA BANK</title>
       <?php
-         require './config/db.php';
+         require './config/connection.php';
          include './includes/meta-tags.php'
       ?>
    </head>

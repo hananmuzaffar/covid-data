@@ -18,15 +18,15 @@ while ($row = mysqli_fetch_array($query))
 ?>
 
 <?php
-$positive_total = $total_positive ?? "XXX";
-$active_total = $total_active ?? "XXX";
-$recovered_total = $total_recovered ?? "XXX";
-$deaths_total = $total_deaths ?? "XXX";
-$positive_new = $new_positive ?? "XX";
-$active_new = $new_active ?? "XX";
-$recovered_new = $new_recovered ?? "XX";
-$deaths_new = $new_deaths ?? "XX";
-$headline_update = $headline_updation ?? "XX-XXX-XXXX";
-$data_update_date = $data_updation_date ?? "XX/XX/XXXX";
-$data_update_time = $data_updation_time ?? "XX:XX XX";
+$TOTAL_POSITIVE = $total_positive ?? "XXX";
+$TOTAL_ACTIVE = $total_active ?? "XXX";
+$TOTAL_RECOVERED = $total_recovered ?? "XXX";
+$TOTAL_DEATHS = $total_deaths ?? "XXX";
+$NEW_POSITIVE = $new_positive ?? "XX";
+$NEW_ACTIVE = $new_active ?? "XX";
+$NEW_RECOVERED = $new_recovered ?? "XX";
+$NEW_DEATHS = $new_deaths ?? "XX";
+$HEADLINE_UPDATION = $headline_updation ?? "XX-XXX-XXXX";
+$DATA_UPDATION_DATE = $data_updation_date ?? "XX/XX/XXXX";
+$DATA_UPDATION_TIME = $data_updation_time ?? "XX:XX XX";
 ?>  

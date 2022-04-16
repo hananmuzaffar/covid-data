@@ -9,8 +9,8 @@
     </thead>
     <tbody>
         <?php
-               $query = mysqli_query($dbconnect, "SELECT * FROM cases LIMIT 20")
-               or die (mysqli_error($dbconnect));
+	    	$casesdata = "SELECT * FROM cases LIMIT 20";
+               $query = mysqli_query($dbconnect , $casesdata);
                while ($row = mysqli_fetch_array($query)) {
                echo
         "<tr id='" . $row['district_name'] . "'>

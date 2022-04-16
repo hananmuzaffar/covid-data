@@ -4,10 +4,10 @@ $username = /* "username" */;
 $password = /* "password" */;
 $db = /* "db-name" */;
 
-$dbconnect = new mysqli($hostnamename, $username, $password, $db);
+$dbconnect = mysqli_connect($hostnamename, $username, $password, $db);
 
 if (!$dbconnect) {
-  die("Connection failed: " . $dbconnect->connect_error);
+  die("Connection failed: " . mysqli_connect_error());
 }
 
 $table = "CREATE TABLE cases (

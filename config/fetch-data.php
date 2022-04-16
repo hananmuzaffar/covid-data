@@ -1,6 +1,6 @@
 <?php
-$query = mysqli_query($dbconnect, "SELECT * FROM cases where id=21")
-  or die (mysqli_error($dbconnect));
+$dbdata = "SELECT * FROM cases where id=21";
+$query = mysqli_query($dbconnect , $dbdata);
 while ($row = mysqli_fetch_array($query))
 {
   $total_positive = $row['total_positive_cases'];

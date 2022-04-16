@@ -6,7 +6,7 @@ $db = /* "db-name" */;
 
 $dbconnect = new mysqli($hostnamename, $username, $password, $db);
 
-if ($dbconnect->connect_error) {
+if (!$dbconnect) {
   die("Connection failed: " . $dbconnect->connect_error);
 }
 
@@ -30,11 +30,11 @@ cases_updation_date VARCHAR(255) NOT NULL,
 cases_updation_time VARCHAR(255) NOT NULL
 )";
 
-if ($dbconnect->query($table) === TRUE) {
+if (mysqli_query($dbconnect,$table) {
   echo "Table cases created successfully";
 } else {
-  echo "Error creating table: " . $dbconnect->error;
+  echo "Error creating table: " . mysqli_error($dbconnect);
 }
 
-$dbconnect->close();
+mysqli_close($dbconnect);
 ?>

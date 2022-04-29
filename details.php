@@ -1,11 +1,12 @@
 <!DOCTYPE HTML>
 <html>
    <head>
-      <title>Patient Details | J&amp;K COCID-19 DATA BANK</title>
-      <?php
-         require './config/connection.php';
-         include './includes/meta-tags.php'
-      ?>
+     <?php
+     $page_name = "Details";
+     echo "<title>$page_name | J&amp;K COVID-19 DATA BANK</title>";
+     require './config/connection.php';
+     include './includes/meta-tags.php'
+     ?>
    </head>
    <body>
      <?php include './includes/header.php' ?>

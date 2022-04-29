@@ -1,6 +1,6 @@
 <div class="row">
   <?php
   include './config/fetch-data.php';
-    echo "<p class='col s12 m6 l4 card-panel yellow darken-1 collection-item black-text z-depth-0'><i class='fas fa-info-circle'></i> <b>Last updated on:</b> <span>" . $DATA_UPDATION_DATE . "</span> <span>" . $DATA_UPDATION_TIME . "</span></p>";
+    echo "<p class='col s12 m6 l4 card-panel yellow darken-1 collection-item black-text z-depth-0'><i class='fas fa-info-circle'></i> <b>Last updated on:</b>&nbsp;<span>$DATA_UPDATION_DATE</span>&nbsp;<span>$DATA_UPDATION_TIME</span></p>";
     ?>
 </div>

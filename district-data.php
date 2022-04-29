@@ -1,8 +1,11 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
     <head>
-      <title>Tabular Data | J&amp;K COVID-19 DATA BANK</title>
-      <?php include './includes/meta-tags.php'; ?>
+      <?php
+      $page_name = "Tabular Data";
+      echo "<title>$page_name | J&amp;K COVID-19 DATA BANK</title>";
+      include './includes/meta-tags.php';
+      ?>
     </head>
     <body>
         <?php include './includes/header.php';

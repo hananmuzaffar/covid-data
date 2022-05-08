@@ -30,8 +30,8 @@ $HEADLINE_UPDATION = $headline_updation ?? "XX-XXX-XXXX";
 $DATA_UPDATION_DATE = $data_updation_date ?? "XX/XX/XXXX";
 $DATA_UPDATION_TIME = $data_updation_time ?? "XX:XX XX";
 
-$POSITIVE = array($NEW_POSITIVE, $TOTAL_POSITIVE);
-$ACTIVE = array($NEW_ACTIVE, $TOTAL_ACTIVE);
-$RECOVERED = array($NEW_RECOVERED, $TOTAL_RECOVERED);
-$DEATHS = array($NEW_DEATHS, $TOTAL_DEATHS);
+$CASES = array(array($NEW_POSITIVE, $TOTAL_POSITIVE),
+               array($NEW_ACTIVE, $TOTAL_ACTIVE),
+               array($NEW_RECOVERED, $TOTAL_RECOVERED),
+               array($NEW_DEATHS, $TOTAL_DEATHS));
 ?>

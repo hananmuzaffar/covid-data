@@ -4,10 +4,20 @@
       
         <div style="text-transform:uppercase;">
         <?php include './config/fetch-data.php';
-                echo "<div class='col s12 m6 l3 card-panel hoverable red lighten-4 collection-item red-text text-darken-3'><i class='fas fa-users'></i> <span style='font-size:1.25rem'>Positive</span><span class='new badge red white-text' data-badge-caption='new'>$POSITIVE[0]</span><p style='font-size: 2rem;'><strong>$POSITIVE[1]</strong></p></div>
-            <div class='col s12 m6 l3 card-panel hoverable blue lighten-4 collection-item blue-text text-darken-3'><i class='fas fa-procedures'></i>  <span style='font-size:1.25rem'>Active</span><span class='new badge blue white-text' data-badge-caption='new'>$ACTIVE[0]</span><p style='font-size: 2rem;'><strong>$ACTIVE[1]</strong></p></div>
-            <div class='col s12 m6 l3 card-panel hoverable green lighten-4 collection-item green-text text-darken-3'><i class='fas fa-heart'></i>  <span style='font-size:1.25rem'>Recovered</span><span class='new badge green white-text' data-badge-caption='new'>$RECOVERED[0]</span><p style='font-size: 2rem;'><strong>$RECOVERED[1]</strong></p></div>
-            <div class='col s12 m6 l3 card-panel hoverable grey lighten-2 collection-item grey-text text-darken-3'><i class='fas fa-ambulance'></i>   <span style='font-size:1.25rem'>Deaths</span><span class='new badge grey white-text' data-badge-caption='new'>$DEATHS[0]</span><p style='font-size: 2rem;'><strong>$DEATHS[1]</strong></p></div>";
+      /* 
+      $CASES[0][0] = New Postive Cases
+      $CASES[0][1] = Total Positive Cases
+      $CASES[1][0] = New Active Cases
+      $CASES[1][1] = Total Active Cases
+      $CASES[2][0] = New Recoveries
+      $CASES[2][1] = Total Recovered
+      $CASES[3][0] = New Deaths
+      $CASES[3][1] = Total Deaths
+      */
+                echo "<div class='col s12 m6 l3 card-panel hoverable red lighten-4 collection-item red-text text-darken-3'><i class='fas fa-users'></i> <span style='font-size:1.25rem'>Positive</span><span class='new badge red white-text' data-badge-caption='new'>" . $CASES[0][0] . "</span><p style='font-size: 2rem;'><strong>" . $CASES[0][1] . "</strong></p></div>
+            <div class='col s12 m6 l3 card-panel hoverable blue lighten-4 collection-item blue-text text-darken-3'><i class='fas fa-procedures'></i>  <span style='font-size:1.25rem'>Active</span><span class='new badge blue white-text' data-badge-caption='new'>" . $CASES[1][0] . "</span><p style='font-size: 2rem;'><strong>" . $CASES[1][1] . "</strong></p></div>
+            <div class='col s12 m6 l3 card-panel hoverable green lighten-4 collection-item green-text text-darken-3'><i class='fas fa-heart'></i>  <span style='font-size:1.25rem'>Recovered</span><span class='new badge green white-text' data-badge-caption='new'>" . $CASES[2][0] . "</span><p style='font-size: 2rem;'><strong>" . $CASES[2][1] . "</strong></p></div>
+            <div class='col s12 m6 l3 card-panel hoverable grey lighten-2 collection-item grey-text text-darken-3'><i class='fas fa-ambulance'></i>   <span style='font-size:1.25rem'>Deaths</span><span class='new badge grey white-text' data-badge-caption='new'>" . $CASES[3][0] . "</span><p style='font-size: 2rem;'><strong>" . $CASES[3][1] . "</strong></p></div>";
             ?>
             </div>
     </div>

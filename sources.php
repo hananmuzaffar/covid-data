@@ -17,7 +17,7 @@
                         <h4 class="center-align" style="font-weight:bold; color:#fa6161">Our Sources</h4>
                     </div>
 			<div class="collection">
-				<div><a href="//twitter.com/diprjk" target="_blank" class="collection-item">Twitter handle of Department of Information and Public Relations, J&amp;K</a></div>
+				<div><a href="//twitter.com/diprjk" target="_blank" class="collection-item">Twitter handle of Information &amp; PR, J&amp;K</a></div>
 				<div><a href="//covid19bharat.org" target="_blank" class="collection-item">Coronavirus Outbreak in India - covid19bharat.org</a></div>
 			</div>
 		    </div>

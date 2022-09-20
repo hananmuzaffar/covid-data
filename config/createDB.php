@@ -3,7 +3,7 @@ $hostname = /* "hostname" */;
 $username = /* "username" */;
 $password = /* "password" */;
 
-$dbconnect = mysqli_connect($hostnamename, $username, $password);
+$dbconnect = mysqli_connect($hostname, $username, $password);
 if (!$dbconnect) {
   die("Connection failed: " . mysqli_connect_error());
 }

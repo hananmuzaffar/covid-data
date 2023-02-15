@@ -28,7 +28,7 @@ $NEW_RECOVERED = $new_recovered ?? "XX";
 $NEW_DEATHS = $new_deaths ?? "XX";
 $HEADLINE_UPDATION = $headline_updation ?? "XX-XXX-XXXX";
 $DATA_UPDATION_DATE = $data_updation_date ?? "XX/XX/XXXX";
-$DATA_UPDATION_TIME = $data_updation_time ?? "XX:XX XX";
+$DATA_UPDATION_TIME = $data_updation_time ?? "XX:XX";
 
 $CASES = array(array($NEW_POSITIVE, $TOTAL_POSITIVE),
                array($NEW_ACTIVE, $TOTAL_ACTIVE),

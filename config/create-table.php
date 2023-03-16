@@ -24,7 +24,7 @@ old_recovered INT(255) NOT NULL,
 new_recovered INT(255),
 total_deaths INT(255) NOT NULL,
 old_deaths INT(255) NOT NULL,
-ne_deaths INT(255),
+new_deaths INT(255),
 headline_updation VARCHAR(255) NOT NULL,
 cases_updation_date VARCHAR(255) NOT NULL,
 cases_updation_time VARCHAR(255) NOT NULL
